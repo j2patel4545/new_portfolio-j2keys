@@ -106,7 +106,7 @@ export function Contact() {
       data-scroll-speed="1.2"
       className="w-full bg-[#ECEBE7] dark:bg-black pt-20 pb-12 sm:pt-24 sm:pb-16 md:py-24 flex items-center justify-between relative z-10 overflow-hidden transition-colors duration-300"
     >
-      <div className="w-full flex flex-col lg:flex-row items-stretch gap-3 lg:gap-4 xl:gap-5 relative">
+      <div className="w-full flex flex-col lg:flex-row items-stretch gap-3 lg:gap-4 xl:gap-5 relative px-4 sm:px-6 lg:px-0">
         
         {/* Left Card: Touches Left Screen Edge (Desktop), Pure White/Black */}
         <div className="hidden lg:flex lg:w-[28%] xl:w-[26%] 2xl:w-[24%] shrink-0 bg-white dark:bg-black rounded-r-3xl rounded-l-none p-4 overflow-hidden relative shadow-xl flex-col items-center justify-center min-h-[640px] select-none border-y border-r border-zinc-200/90 dark:border-zinc-800 transition-colors duration-300">
@@ -153,7 +153,7 @@ export function Contact() {
         </div>
 
         {/* Right Card: Touches Right Screen Edge (Desktop), Pure White/Black */}
-        <div className="w-full flex-1 bg-white dark:bg-black rounded-2xl lg:rounded-none lg:rounded-l-3xl p-6 sm:p-10 md:p-12 lg:p-14 shadow-xl flex flex-col justify-center border-y lg:border-l border-zinc-200/90 dark:border-zinc-800 mx-3 sm:mx-6 lg:mx-0 transition-colors duration-300">
+        <div className="w-full flex-1 bg-white dark:bg-black rounded-2xl lg:rounded-none lg:rounded-l-3xl p-5 sm:p-10 md:p-12 lg:p-14 shadow-xl flex flex-col justify-center border border-zinc-200/90 dark:border-zinc-800 lg:border-y lg:border-l lg:border-r-0 lg:mx-0 transition-colors duration-300">
           <div className="w-full max-w-2xl mx-auto">
             
             {/* Header */}

@@ -129,7 +129,7 @@ export const About = () => {
             className="lg:col-span-7 flex flex-col justify-center space-y-7"
           >
             {/* Header Badge */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center justify-center lg:justify-start gap-2.5 sm:gap-3 flex-wrap">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-900 dark:bg-zinc-800 text-white text-xs font-semibold tracking-wider uppercase shadow-sm">
                 <Sparkles className="w-3.5 h-3.5 text-rose-400" />
                 <span>About Me</span>
@@ -140,8 +140,8 @@ export const About = () => {
             </div>
 
             {/* Typewriter Designation Title */}
-            <div className="space-y-1">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-extrabold text-zinc-900 dark:text-white tracking-tight leading-[1.15]">
+            <div className="space-y-1 text-center lg:text-left">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-extrabold text-zinc-900 dark:text-white tracking-tight leading-[1.15] flex flex-wrap justify-center lg:justify-start items-baseline">
                 <span>I'm a&nbsp;</span>
                 <span className="text-rose-600 dark:text-rose-400 inline-flex items-baseline relative">
                   <span className="relative">
@@ -155,10 +155,10 @@ export const About = () => {
 
             {/* In-depth Editorial Paragraphs */}
             <div className="space-y-4 text-zinc-700 dark:text-zinc-300 text-base sm:text-lg leading-relaxed font-normal">
-              <p>
+              <p className="text-justify leading-relaxed">
                 Results-driven <span className="font-bold text-zinc-900 dark:text-white">MERN Stack Developer</span> with <span className="font-bold text-zinc-900 dark:text-white">2+ years of hands-on industry experience</span> building, optimizing, and deploying production-grade web applications. Proven track record leading end-to-end client requirements, modernizing legacy CodeIgniter/PHP monoliths into scalable MERN solutions, and developing enterprise Laboratory Information Management Systems (LIMS).
               </p>
-              <p className="text-zinc-600 dark:text-zinc-400 text-base leading-relaxed">
+              <p className="text-zinc-600 dark:text-zinc-400 text-base leading-relaxed text-justify">
                 Proficient across <span className="font-semibold text-zinc-900 dark:text-white">React, Node.js, Express, Fastify, PostgreSQL, and MySQL</span>, with deep expertise in role-based access control (RBAC), API security, client sprint demonstrations, and mentoring junior engineers. Live portfolio & production work available at{' '}
                 <a
                   href="https://www.j2codes.in"
@@ -178,7 +178,7 @@ export const About = () => {
               {metrics.map((item, idx) => (
                 <div
                   key={idx}
-                  className="p-3.5 sm:p-4 rounded-2xl bg-white/70 dark:bg-zinc-950/80 backdrop-blur-sm border border-zinc-200/90 dark:border-zinc-800/90 shadow-sm transition-transform duration-200 hover:-translate-y-0.5 flex flex-col justify-between"
+                  className="p-3.5 sm:p-4 rounded-2xl bg-white/70 dark:bg-zinc-950/80 backdrop-blur-sm border border-zinc-200/90 dark:border-zinc-800/90 shadow-sm transition-transform duration-200 hover:-translate-y-0.5 flex flex-col items-center sm:items-start text-center sm:text-left justify-between"
                 >
                   <div className="text-lg sm:text-xl lg:text-2xl font-extrabold text-zinc-900 dark:text-white tracking-tight whitespace-nowrap">
                     {item.value}
@@ -214,7 +214,7 @@ export const About = () => {
                           {card.badge}
                         </span>
                       </div>
-                      <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mt-1 leading-relaxed">
+                      <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mt-1 leading-relaxed text-justify sm:text-left">
                         {card.desc}
                       </p>
                     </div>
@@ -224,7 +224,7 @@ export const About = () => {
             </div>
 
             {/* Action CTAs */}
-            <div className="flex flex-wrap items-center gap-4 pt-3">
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-3">
               <button
                 onClick={() => scrollTo('#contact')}
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-zinc-900 hover:bg-rose-600 dark:bg-zinc-800 dark:hover:bg-rose-600 text-white text-sm font-semibold tracking-wide shadow-md shadow-zinc-900/10 hover:shadow-rose-600/20 transition-all duration-300 active:scale-[0.98] cursor-pointer group"

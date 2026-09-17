@@ -60,17 +60,9 @@ export const Footer = () => {
           />
         </div>
 
-        {/* TOP ROW: Status badge + Hide Toggle on left & Back to Top button on right */}
-        <div className="relative w-full px-6 sm:px-12 md:px-16 lg:px-24 flex items-center justify-between z-20">
+        {/* TOP ROW: Hide Toggle on left & Back to Top button on right */}
+        <div className="relative w-full px-4 sm:px-12 md:px-16 lg:px-24 flex items-center justify-between z-20">
           <div className="flex items-center gap-2 sm:gap-2.5">
-            <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/70 dark:bg-zinc-900/80 border border-zinc-300/80 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 text-xs font-semibold shadow-xs backdrop-blur-md">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-600"></span>
-              </span>
-              <span className="tracking-tight">Available for 2026 Collaborations</span>
-            </div>
-
             {/* Toggle Background Image Hide/Show Button */}
             <button
               onClick={() => setShowBgImage((prev) => !prev)}
@@ -136,9 +128,9 @@ export const Footer = () => {
       </div>
 
       {/* BOTTOM ROW: Copyright & Socials Section - Starts exactly where background image ends */}
-      <div className="relative w-full px-6 sm:px-12 md:px-16 lg:px-24 grid grid-cols-2 md:grid-cols-4 gap-y-4 gap-x-6 text-xs sm:text-[13px] md:text-sm text-zinc-700 dark:text-zinc-400 font-medium z-20 pt-4 sm:pt-5 pb-5 sm:pb-7 border-t border-zinc-300/80 dark:border-zinc-800 bg-[#ecebe8] dark:bg-black">
+      <div className="relative w-full px-4 sm:px-8 md:px-16 lg:px-24 flex flex-col md:grid md:grid-cols-4 items-center gap-y-3 gap-x-6 text-xs sm:text-[13px] md:text-sm text-zinc-700 dark:text-zinc-400 font-medium z-20 pt-4 sm:pt-5 pb-5 sm:pb-7 border-t border-zinc-300/80 dark:border-zinc-800 bg-[#ecebe8] dark:bg-black">
         {/* Col 1: Socials */}
-        <div className="text-left flex items-center gap-3">
+        <div className="w-full md:w-auto flex items-center justify-center md:justify-start gap-3 text-left">
           <span className="text-zinc-500 dark:text-zinc-400 font-mono text-xs">SOCIALS:</span>
           <div className="flex items-center gap-2.5">
             {socialLinks.map((social) => {
@@ -159,8 +151,8 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* Col 2: Navigation Links */}
-        <div className="text-right md:text-center flex flex-wrap justify-end md:justify-center gap-3">
+        {/* Col 2: Navigation Links (Hidden in Mobile View) */}
+        <div className="hidden md:flex text-right md:text-center flex-wrap justify-end md:justify-center gap-3">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -176,13 +168,13 @@ export const Footer = () => {
           ))}
         </div>
 
-        {/* Col 3: Location */}
-        <div className="text-left md:text-center text-xs sm:text-[13px]">
+        {/* Col 3: Location (Hidden in Mobile View) */}
+        <div className="hidden md:block text-left md:text-center text-xs sm:text-[13px]">
           <span className="text-zinc-600 dark:text-zinc-400">Available Worldwide</span>
         </div>
 
-        {/* Col 4: Copyright */}
-        <div className="text-right text-xs sm:text-[13px] text-zinc-600 dark:text-zinc-400">
+        {/* Col 4: Copyright (Single Line on All Screens!) */}
+        <div className="w-full md:w-auto text-center md:text-right text-[11px] sm:text-xs md:text-[13px] text-zinc-600 dark:text-zinc-400 whitespace-nowrap">
           <span>© {new Date().getFullYear()} {personalInfo.name}. All rights reserved.</span>
         </div>
       </div>
