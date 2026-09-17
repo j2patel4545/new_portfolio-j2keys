@@ -169,7 +169,7 @@ export const Hero = () => {
               title="Close Menu"
             >
               <span className="tracking-tight font-medium">{formattedDate}</span>
-              <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-zinc-900 dark:bg-white dark:text-black text-white group-hover:bg-rose-600 dark:group-hover:bg-rose-500 dark:group-hover:text-white transition-colors shadow-xs">
+              <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-zinc-900 dark:bg-zinc-800 text-white group-hover:bg-rose-600 dark:group-hover:bg-rose-500 transition-colors shadow-xs">
                 <X className="w-3.5 h-3.5 transition-transform group-hover:rotate-90 duration-200" />
               </span>
             </button>
@@ -257,7 +257,7 @@ export const Hero = () => {
             </div>
 
             {/* Direct Contact Box */}
-            <div className="p-5 rounded-2xl bg-white dark:bg-zinc-900/80 border border-zinc-200/90 dark:border-zinc-800 shadow-sm space-y-2">
+            <div className="p-5 rounded-2xl bg-white dark:bg-zinc-800 border border-zinc-200/90 dark:border-zinc-700 shadow-sm space-y-2">
               <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-zinc-500 dark:text-zinc-400 font-semibold">
                 <Mail className="w-3.5 h-3.5 text-rose-600 dark:text-rose-400" /> Direct Inquiries
               </div>
@@ -285,7 +285,7 @@ export const Hero = () => {
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white dark:bg-zinc-900/80 hover:bg-zinc-100 dark:hover:bg-zinc-800 border border-zinc-200/90 dark:border-zinc-800 text-xs font-semibold text-zinc-800 dark:text-zinc-200 hover:text-zinc-950 dark:hover:text-white transition-colors shadow-sm"
+                    className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white dark:bg-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-700 border border-zinc-200/90 dark:border-zinc-700 text-xs font-semibold text-zinc-800 dark:text-zinc-200 hover:text-zinc-950 dark:hover:text-white transition-colors shadow-sm"
                   >
                     <item.icon className="w-3.5 h-3.5" />
                     {item.name}

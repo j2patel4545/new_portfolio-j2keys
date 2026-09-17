@@ -11,7 +11,7 @@ export const Experience = () => {
       <div className="max-w-4xl mx-auto">
         <SectionHeader
           badgeText="Career Path"
-          title="Work & Education"
+          title="Experience & Education"
           subtitle="A chronological timeline of professional engineering experience, industry roles, and academic degrees."
         />
 
@@ -30,9 +30,9 @@ export const Experience = () => {
                 className="relative group"
               >
                 {/* Timeline Marker */}
-                <div className="absolute -left-[31px] md:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-white dark:bg-black border-2 border-rose-600 group-hover:bg-rose-600 group-hover:scale-125 transition-all shadow-xs" />
+                <div className="absolute -left-[31px] md:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-white dark:bg-zinc-800 border-2 border-rose-600 group-hover:bg-rose-600 group-hover:scale-125 transition-all shadow-xs" />
 
-                <Card className="p-6 md:p-8 bg-white dark:bg-zinc-950/80 border border-zinc-200/90 dark:border-zinc-800/90 shadow-sm transition-all duration-300 group-hover:border-zinc-300 dark:group-hover:border-zinc-700">
+                <Card className="p-6 md:p-8 bg-white dark:bg-zinc-800 border border-zinc-200/90 dark:border-zinc-700/80 shadow-sm transition-all duration-300 group-hover:border-zinc-300 dark:group-hover:border-zinc-600">
                   <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-3">
                     <div>
                       <h3 className="text-xl font-bold text-zinc-900 dark:text-white group-hover:text-rose-600 dark:group-hover:text-rose-400 transition-colors">

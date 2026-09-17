@@ -27,10 +27,10 @@ export const Footer = () => {
   return (
     <footer
       id="footer"
-      className="relative w-full min-h-[70vh] md:min-h-[82vh] bg-[#ecebe8] dark:bg-black text-[#1c1c1e] dark:text-white flex flex-col justify-between selection:bg-rose-500 selection:text-white overflow-hidden border-t border-zinc-300/80 dark:border-zinc-800 z-20 transition-colors duration-300"
+      className="relative w-full min-h-[34vh] sm:min-h-[46vh] md:min-h-[82vh] bg-[#ecebe8] dark:bg-black text-[#1c1c1e] dark:text-white flex flex-col justify-between selection:bg-rose-500 selection:text-white overflow-hidden border-t border-zinc-300/80 dark:border-zinc-800 z-20 transition-colors duration-300"
     >
       {/* UPPER FOOTER REGION: Contains Top Controls, Centerpiece, and Background Keyboard ending precisely at bottom */}
-      <div className="relative flex-1 flex flex-col justify-between w-full overflow-hidden pt-8 sm:pt-12 md:pt-14">
+      <div className="relative flex-1 flex flex-col justify-between w-full overflow-hidden pt-2 sm:pt-6 md:pt-14">
         {/* Background Piano & Computer Keyboard Hybrid Image - Ends precisely where bottom copyright section starts */}
         <div
           className={`pointer-events-none absolute inset-x-0 bottom-0 w-full overflow-hidden select-none z-0 transition-all duration-500 ease-in-out ${
@@ -40,7 +40,7 @@ export const Footer = () => {
           <img
             src="/footer_piano_computer.png"
             alt="J2Keys Piano and Computer Keyboard Background"
-            className="w-full h-auto max-h-[340px] sm:max-h-[420px] md:max-h-[500px] lg:max-h-[580px] object-cover object-bottom opacity-60 dark:opacity-50 transition-opacity duration-300"
+            className="w-full h-auto max-h-[160px] sm:max-h-[260px] md:max-h-[500px] lg:max-h-[580px] object-cover object-bottom opacity-60 dark:opacity-50 transition-opacity duration-300"
             loading="lazy"
           />
           {/* Subtle vertical gradient blending from top */}
@@ -66,7 +66,7 @@ export const Footer = () => {
             {/* Toggle Background Image Hide/Show Button */}
             <button
               onClick={() => setShowBgImage((prev) => !prev)}
-              className="group relative inline-flex items-center justify-center p-2 rounded-full bg-white/70 dark:bg-zinc-900/80 border border-zinc-300/80 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:text-rose-600 dark:hover:text-rose-400 hover:border-zinc-400 dark:hover:border-zinc-700 transition-all duration-300 shadow-xs cursor-pointer backdrop-blur-md"
+              className="group relative inline-flex items-center justify-center p-2 rounded-full bg-white/70 dark:bg-zinc-800 border border-zinc-300/80 dark:border-zinc-700 text-zinc-600 dark:text-zinc-400 hover:text-rose-600 dark:hover:text-rose-400 hover:border-zinc-400 dark:hover:border-zinc-600 transition-all duration-300 shadow-xs cursor-pointer backdrop-blur-md"
               title={showBgImage ? 'Hide background graphic' : 'Show background graphic'}
               aria-label={showBgImage ? 'Hide background graphic' : 'Show background graphic'}
             >
@@ -84,18 +84,18 @@ export const Footer = () => {
 
           <button
             onClick={handleBackToTop}
-            className="group flex items-center gap-2 px-4 py-2 sm:px-5 sm:py-2.5 rounded-full bg-zinc-900 dark:bg-zinc-800 hover:bg-rose-600 dark:hover:bg-rose-600 text-white transition-all duration-300 cursor-pointer shadow-md hover:shadow-lg text-xs sm:text-sm font-semibold"
+            className="group flex items-center gap-2 px-3.5 py-1.5 sm:px-5 sm:py-2.5 rounded-full bg-zinc-900 dark:bg-zinc-800 hover:bg-rose-600 dark:hover:bg-rose-600 text-white transition-all duration-300 cursor-pointer shadow-md hover:shadow-lg text-xs sm:text-sm font-semibold"
             aria-label="Back to Top"
           >
             <span className="tracking-tight">Back to Top</span>
-            <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-white/20 group-hover:-translate-y-0.5 transition-transform duration-300">
-              <ArrowUp className="w-3.5 h-3.5 text-white" />
+            <span className="inline-flex items-center justify-center w-4.5 h-4.5 sm:w-5 sm:h-5 rounded-full bg-white/20 group-hover:-translate-y-0.5 transition-transform duration-300">
+              <ArrowUp className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-white" />
             </span>
           </button>
         </div>
 
         {/* CENTERPIECE: Dominant "let's talk" + Cursive "Together." Signature (Matching Hero UI) */}
-        <div className="relative flex-1 flex flex-col items-center justify-center w-full px-4 sm:px-8 my-auto select-none py-8 z-20">
+        <div className="relative flex-1 flex flex-col items-center justify-center w-full px-4 sm:px-8 my-auto select-none py-2 sm:py-4 md:py-8 z-20">
           <div className="relative flex items-center justify-center text-center">
             {/* Main bold title: "let's talk" */}
             <h2
@@ -103,7 +103,7 @@ export const Footer = () => {
               style={{
                 fontFamily: "'Archivo', 'Syne', -apple-system, sans-serif",
                 fontWeight: 900,
-                fontSize: 'clamp(3.8rem, 15.5vw, 17rem)',
+                fontSize: 'clamp(2.9rem, 13.5vw, 17rem)',
               }}
             >
               let’s talk
@@ -115,7 +115,7 @@ export const Footer = () => {
                 className="inline-block text-[#e62638] dark:text-[#ff385c] font-normal select-none -rotate-6"
                 style={{
                   fontFamily: "'Alex Brush', 'Caveat', cursive",
-                  fontSize: 'clamp(3.5rem, 11vw, 12rem)',
+                  fontSize: 'clamp(2.6rem, 10vw, 12rem)',
                   lineHeight: 1,
                   textShadow: '0 2px 14px rgba(230, 38, 56, 0.35)',
                 }}
@@ -128,7 +128,7 @@ export const Footer = () => {
       </div>
 
       {/* BOTTOM ROW: Copyright & Socials Section - Starts exactly where background image ends */}
-      <div className="relative w-full px-4 sm:px-8 md:px-16 lg:px-24 flex flex-col md:grid md:grid-cols-4 items-center gap-y-3 gap-x-6 text-xs sm:text-[13px] md:text-sm text-zinc-700 dark:text-zinc-400 font-medium z-20 pt-4 sm:pt-5 pb-5 sm:pb-7 border-t border-zinc-300/80 dark:border-zinc-800 bg-[#ecebe8] dark:bg-black">
+      <div className="relative w-full px-4 sm:px-8 md:px-16 lg:px-24 flex flex-col md:grid md:grid-cols-4 items-center gap-y-2 sm:gap-y-3 gap-x-6 text-xs sm:text-[13px] md:text-sm text-zinc-700 dark:text-zinc-400 font-medium z-20 pt-2 sm:pt-3 md:pt-5 pb-2.5 sm:pb-4 md:pb-7 border-t border-zinc-300/80 dark:border-zinc-800 bg-[#ecebe8] dark:bg-black">
         {/* Col 1: Socials */}
         <div className="w-full md:w-auto flex items-center justify-center md:justify-start gap-3 text-left">
           <span className="text-zinc-500 dark:text-zinc-400 font-mono text-xs">SOCIALS:</span>

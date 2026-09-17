@@ -12,7 +12,7 @@ export const MarqueeBanner = () => {
           - Above this ribbon: 100% transparent (bg-none), Hero section shows through
           - Text: ONLY border/stroke, NO fill color (color: transparent)
       */}
-      <div className="relative w-[125vw] -ml-[12.5vw] min-h-[30vh] sm:min-h-[34vh] md:min-h-[38vh] bg-zinc-800 dark:bg-black flex items-center shadow-2xl border-y border-zinc-700/80 dark:border-zinc-800 transform rotate-[2.4deg] z-10 transition-colors duration-300">
+      <div className="relative w-[125vw] -ml-[12.5vw] min-h-[30vh] sm:min-h-[34vh] md:min-h-[38vh] bg-zinc-800 flex items-center shadow-2xl border-y border-zinc-700/80 transform rotate-[2.4deg] z-10 transition-colors duration-300">
         {/* Continuous infinite right-to-left marquee track */}
         <motion.div
           className="flex items-center whitespace-nowrap will-change-transform"

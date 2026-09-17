@@ -121,7 +121,7 @@ export const Projects = () => {
                   className="group mac-glass-window project-card rounded-2xl sm:rounded-3xl flex flex-col justify-between overflow-hidden shrink-0"
                 >
                   {/* macOS Window Chrome Bar */}
-                  <div className="flex items-center justify-between px-3.5 py-2 sm:px-4 sm:py-2.5 border-b border-black/[0.06] dark:border-white/[0.08] bg-white/40 dark:bg-white/[0.02]">
+                  <div className="flex items-center justify-between px-3.5 py-2 sm:px-4 sm:py-2.5 border-b border-black/[0.06] dark:border-white/[0.08] bg-white/40 dark:bg-zinc-800/60">
                     {/* Traffic Light Dots */}
                     <div className="flex items-center gap-1.5 sm:gap-2">
                       <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#FF5F56] border border-[#E0443E]/60 shadow-[inset_0_1px_1px_rgba(255,255,255,0.5)] inline-block transition-transform duration-200 group-hover:scale-105" />
@@ -182,7 +182,7 @@ export const Projects = () => {
 
                       {/* Frosted Category Badge */}
                       <div className="absolute top-2 left-2 sm:top-2.5 sm:left-2.5">
-                        <span className="inline-flex items-center gap-1 px-2 py-0.5 sm:px-2.5 sm:py-0.5 rounded-full text-[10px] sm:text-[11px] font-semibold bg-white/85 dark:bg-zinc-900/85 backdrop-blur-md border border-white/60 dark:border-white/10 text-zinc-900 dark:text-zinc-100 shadow-sm">
+                        <span className="inline-flex items-center gap-1 px-2 py-0.5 sm:px-2.5 sm:py-0.5 rounded-full text-[10px] sm:text-[11px] font-semibold bg-white/85 dark:bg-zinc-800/90 backdrop-blur-md border border-white/60 dark:border-white/10 text-zinc-900 dark:text-zinc-100 shadow-sm">
                           <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
                           {project.category}
                         </span>
@@ -243,7 +243,7 @@ export const Projects = () => {
             {/* Ending "View All Projects" Card in the horizontal track */}
             <div className="mac-glass-window project-card-archive rounded-2xl sm:rounded-3xl p-0 flex flex-col justify-between shrink-0 group overflow-hidden">
               {/* macOS Window Chrome */}
-              <div className="flex items-center justify-between px-3.5 py-2 sm:px-4 sm:py-2.5 border-b border-black/[0.06] dark:border-white/[0.08] bg-white/40 dark:bg-white/[0.02]">
+              <div className="flex items-center justify-between px-3.5 py-2 sm:px-4 sm:py-2.5 border-b border-black/[0.06] dark:border-white/[0.08] bg-white/40 dark:bg-zinc-800/60">
                 <div className="flex items-center gap-1.5 sm:gap-2">
                   <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#FF5F56] border border-[#E0443E]/60 shadow-[inset_0_1px_1px_rgba(255,255,255,0.5)] inline-block" />
                   <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#FFBD2E] border border-[#DEA123]/60 shadow-[inset_0_1px_1px_rgba(255,255,255,0.5)] inline-block" />

@@ -19,7 +19,7 @@ export const Button = ({
 
   const variants = {
     primary: 'bg-zinc-900 dark:bg-zinc-100 hover:bg-rose-600 dark:hover:bg-rose-600 text-white dark:text-black dark:hover:text-white shadow-md shadow-zinc-900/10 hover:shadow-rose-600/20 active:scale-[0.98]',
-    secondary: 'bg-white dark:bg-zinc-900 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-900 dark:text-white border border-zinc-200/90 dark:border-zinc-800 shadow-sm active:scale-[0.98]',
+    secondary: 'bg-white dark:bg-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-700 text-zinc-900 dark:text-white border border-zinc-200/90 dark:border-zinc-700 shadow-sm active:scale-[0.98]',
     outline: 'border border-zinc-300 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200 hover:border-zinc-900 dark:hover:border-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-900 active:scale-[0.98]',
     ghost: 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-900 active:scale-[0.98]',
   }

@@ -108,8 +108,8 @@ export function Contact() {
     >
       <div className="w-full flex flex-col lg:flex-row items-stretch gap-3 lg:gap-4 xl:gap-5 relative px-4 sm:px-6 lg:px-0">
         
-        {/* Left Card: Touches Left Screen Edge (Desktop), Pure White/Black */}
-        <div className="hidden lg:flex lg:w-[28%] xl:w-[26%] 2xl:w-[24%] shrink-0 bg-white dark:bg-black rounded-r-3xl rounded-l-none p-4 overflow-hidden relative shadow-xl flex-col items-center justify-center min-h-[640px] select-none border-y border-r border-zinc-200/90 dark:border-zinc-800 transition-colors duration-300">
+        {/* Left Card: Touches Left Screen Edge (Desktop), Pure White / zinc-800 */}
+        <div className="hidden lg:flex lg:w-[28%] xl:w-[26%] 2xl:w-[24%] shrink-0 bg-white dark:bg-zinc-800 rounded-r-3xl rounded-l-none p-4 overflow-hidden relative shadow-xl flex-col items-center justify-center min-h-[640px] select-none border-y border-r border-zinc-200/90 dark:border-zinc-700 transition-colors duration-300">
           {/* Concentric orbital rings radiating from right edge */}
           <svg
             className="absolute inset-0 w-full h-full pointer-events-none"
@@ -119,11 +119,11 @@ export function Contact() {
             preserveAspectRatio="none"
           >
             {/* Concentric circles centered at (330, 350) */}
-            <circle cx="330" cy="350" r="100" className="stroke-zinc-300 dark:stroke-zinc-800" strokeWidth="1.2" strokeDasharray="3 3" opacity="0.9" />
-            <circle cx="330" cy="350" r="175" className="stroke-zinc-200 dark:stroke-zinc-800/80" strokeWidth="1.2" opacity="0.9" />
-            <circle cx="330" cy="350" r="250" className="stroke-zinc-200 dark:stroke-zinc-800/80" strokeWidth="1.2" opacity="0.9" />
-            <circle cx="330" cy="350" r="320" className="stroke-zinc-200 dark:stroke-zinc-800/80" strokeWidth="1.2" opacity="0.9" />
-            <circle cx="330" cy="350" r="400" className="stroke-zinc-100 dark:stroke-zinc-900" strokeWidth="1.2" opacity="0.8" />
+            <circle cx="330" cy="350" r="100" className="stroke-zinc-300 dark:stroke-zinc-700" strokeWidth="1.2" strokeDasharray="3 3" opacity="0.9" />
+            <circle cx="330" cy="350" r="175" className="stroke-zinc-200 dark:stroke-zinc-700/80" strokeWidth="1.2" opacity="0.9" />
+            <circle cx="330" cy="350" r="250" className="stroke-zinc-200 dark:stroke-zinc-700/80" strokeWidth="1.2" opacity="0.9" />
+            <circle cx="330" cy="350" r="320" className="stroke-zinc-200 dark:stroke-zinc-700/80" strokeWidth="1.2" opacity="0.9" />
+            <circle cx="330" cy="350" r="400" className="stroke-zinc-100 dark:stroke-zinc-700/60" strokeWidth="1.2" opacity="0.8" />
           </svg>
 
           {/* Golden / Orange accent dots along orbit curves */}
@@ -140,7 +140,7 @@ export function Contact() {
             <div
               key={av.id}
               style={{ top: av.top, left: av.left }}
-              className={`absolute transform -translate-x-1/2 -translate-y-1/2 ${av.size} rounded-full border-2 border-white dark:border-zinc-800 shadow-md overflow-hidden bg-zinc-100 dark:bg-zinc-800 transition-all duration-300 hover:scale-110 hover:border-rose-500 hover:shadow-xl hover:z-20`}
+              className={`absolute transform -translate-x-1/2 -translate-y-1/2 ${av.size} rounded-full border-2 border-white dark:border-zinc-700 shadow-md overflow-hidden bg-zinc-100 dark:bg-zinc-800 transition-all duration-300 hover:scale-110 hover:border-rose-500 hover:shadow-xl hover:z-20`}
             >
               <img
                 src={av.src}
@@ -152,8 +152,8 @@ export function Contact() {
           ))}
         </div>
 
-        {/* Right Card: Touches Right Screen Edge (Desktop), Pure White/Black */}
-        <div className="w-full flex-1 bg-white dark:bg-black rounded-2xl lg:rounded-none lg:rounded-l-3xl p-5 sm:p-10 md:p-12 lg:p-14 shadow-xl flex flex-col justify-center border border-zinc-200/90 dark:border-zinc-800 lg:border-y lg:border-l lg:border-r-0 lg:mx-0 transition-colors duration-300">
+        {/* Right Card: Touches Right Screen Edge (Desktop), Pure White / zinc-800 */}
+        <div className="w-full flex-1 bg-white dark:bg-zinc-800 rounded-2xl lg:rounded-none lg:rounded-l-3xl p-5 sm:p-10 md:p-12 lg:p-14 shadow-xl flex flex-col justify-center border border-zinc-200/90 dark:border-zinc-700 lg:border-y lg:border-l lg:border-r-0 lg:mx-0 transition-colors duration-300">
           <div className="w-full max-w-2xl mx-auto">
             
             {/* Header */}
@@ -200,7 +200,7 @@ export function Contact() {
                     onChange={handleChange}
                     placeholder="First name"
                     required
-                    className="w-full px-3.5 py-2.5 bg-zinc-50/80 dark:bg-zinc-900/70 hover:bg-zinc-50 dark:hover:bg-zinc-900 focus:bg-white dark:focus:bg-zinc-900 text-zinc-900 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-500 border border-zinc-300 dark:border-zinc-800 rounded-lg text-base sm:text-sm shadow-2xs focus:outline-none focus:border-zinc-900 dark:focus:border-rose-500 focus:ring-1 focus:ring-zinc-900 dark:focus:ring-rose-500 transition-all"
+                    className="w-full px-3.5 py-2.5 bg-zinc-50/80 dark:bg-zinc-900/70 hover:bg-zinc-50 dark:hover:bg-zinc-900 focus:bg-white dark:focus:bg-zinc-800 text-zinc-900 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-500 border border-zinc-300 dark:border-zinc-800 rounded-lg text-base sm:text-sm shadow-2xs focus:outline-none focus:border-zinc-900 dark:focus:border-rose-500 focus:ring-1 focus:ring-zinc-900 dark:focus:ring-rose-500 transition-all"
                   />
                 </div>
                 <div>
@@ -214,7 +214,7 @@ export function Contact() {
                     onChange={handleChange}
                     placeholder="Last name"
                     required
-                    className="w-full px-3.5 py-2.5 bg-zinc-50/80 dark:bg-zinc-900/70 hover:bg-zinc-50 dark:hover:bg-zinc-900 focus:bg-white dark:focus:bg-zinc-900 text-zinc-900 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-500 border border-zinc-300 dark:border-zinc-800 rounded-lg text-base sm:text-sm shadow-2xs focus:outline-none focus:border-zinc-900 dark:focus:border-rose-500 focus:ring-1 focus:ring-zinc-900 dark:focus:ring-rose-500 transition-all"
+                    className="w-full px-3.5 py-2.5 bg-zinc-50/80 dark:bg-zinc-900/70 hover:bg-zinc-50 dark:hover:bg-zinc-900 focus:bg-white dark:focus:bg-zinc-800 text-zinc-900 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-500 border border-zinc-300 dark:border-zinc-800 rounded-lg text-base sm:text-sm shadow-2xs focus:outline-none focus:border-zinc-900 dark:focus:border-rose-500 focus:ring-1 focus:ring-zinc-900 dark:focus:ring-rose-500 transition-all"
                   />
                 </div>
               </div>
@@ -230,7 +230,7 @@ export function Contact() {
                   value={formData.contactNumber}
                   onChange={handleChange}
                   placeholder="+1 234 567 890"
-                  className="w-full px-3.5 py-2.5 bg-zinc-50/80 dark:bg-zinc-900/70 hover:bg-zinc-50 dark:hover:bg-zinc-900 focus:bg-white dark:focus:bg-zinc-900 text-zinc-900 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-500 border border-zinc-300 dark:border-zinc-800 rounded-lg text-base sm:text-sm shadow-2xs focus:outline-none focus:border-zinc-900 dark:focus:border-rose-500 focus:ring-1 focus:ring-zinc-900 dark:focus:ring-rose-500 transition-all"
+                  className="w-full px-3.5 py-2.5 bg-zinc-50/80 dark:bg-zinc-900/70 hover:bg-zinc-50 dark:hover:bg-zinc-900 focus:bg-white dark:focus:bg-zinc-800 text-zinc-900 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-500 border border-zinc-300 dark:border-zinc-800 rounded-lg text-base sm:text-sm shadow-2xs focus:outline-none focus:border-zinc-900 dark:focus:border-rose-500 focus:ring-1 focus:ring-zinc-900 dark:focus:ring-rose-500 transition-all"
                 />
               </div>
 
@@ -246,7 +246,7 @@ export function Contact() {
                   onChange={handleChange}
                   placeholder="Email address"
                   required
-                  className="w-full px-3.5 py-2.5 bg-zinc-50/80 dark:bg-zinc-900/70 hover:bg-zinc-50 dark:hover:bg-zinc-900 focus:bg-white dark:focus:bg-zinc-900 text-zinc-900 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-500 border border-zinc-300 dark:border-zinc-800 rounded-lg text-base sm:text-sm shadow-2xs focus:outline-none focus:border-zinc-900 dark:focus:border-rose-500 focus:ring-1 focus:ring-zinc-900 dark:focus:ring-rose-500 transition-all"
+                  className="w-full px-3.5 py-2.5 bg-zinc-50/80 dark:bg-zinc-900/70 hover:bg-zinc-50 dark:hover:bg-zinc-900 focus:bg-white dark:focus:bg-zinc-800 text-zinc-900 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-500 border border-zinc-300 dark:border-zinc-800 rounded-lg text-base sm:text-sm shadow-2xs focus:outline-none focus:border-zinc-900 dark:focus:border-rose-500 focus:ring-1 focus:ring-zinc-900 dark:focus:ring-rose-500 transition-all"
                 />
               </div>
 
@@ -261,13 +261,13 @@ export function Contact() {
                       id="teamSize"
                       value={formData.teamSize}
                       onChange={handleChange}
-                      className="w-full px-3.5 py-2.5 bg-zinc-50/80 dark:bg-zinc-900/70 hover:bg-zinc-50 dark:hover:bg-zinc-900 focus:bg-white dark:focus:bg-zinc-900 text-zinc-900 dark:text-white border border-zinc-300 dark:border-zinc-800 rounded-lg text-base sm:text-sm shadow-2xs appearance-none focus:outline-none focus:border-zinc-900 dark:focus:border-rose-500 focus:ring-1 focus:ring-zinc-900 dark:focus:ring-rose-500 transition-all cursor-pointer pr-10"
+                      className="w-full px-3.5 py-2.5 bg-zinc-50/80 dark:bg-zinc-900/70 hover:bg-zinc-50 dark:hover:bg-zinc-900 focus:bg-white dark:focus:bg-zinc-800 text-zinc-900 dark:text-white border border-zinc-300 dark:border-zinc-800 rounded-lg text-base sm:text-sm shadow-2xs appearance-none focus:outline-none focus:border-zinc-900 dark:focus:border-rose-500 focus:ring-1 focus:ring-zinc-900 dark:focus:ring-rose-500 transition-all cursor-pointer pr-10"
                     >
-                      <option value="-" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">-</option>
-                      <option value="-18" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">-18</option>
-                      <option value="18-32" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">18-32</option>
-                      <option value="32-56" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">32-56</option>
-                      <option value="57+" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">57+</option>
+                      <option value="-" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">-</option>
+                      <option value="-18" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">-18</option>
+                      <option value="18-32" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">18-32</option>
+                      <option value="32-56" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">32-56</option>
+                      <option value="57+" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">57+</option>
                     </select>
                     <ChevronDown className="w-4 h-4 text-zinc-500 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
                   </div>
@@ -282,34 +282,34 @@ export function Contact() {
                       id="location"
                       value={formData.location}
                       onChange={handleChange}
-                      className="w-full px-3.5 py-2.5 bg-zinc-50/80 dark:bg-zinc-900/70 hover:bg-zinc-50 dark:hover:bg-zinc-900 focus:bg-white dark:focus:bg-zinc-900 text-zinc-900 dark:text-white border border-zinc-300 dark:border-zinc-800 rounded-lg text-base sm:text-sm shadow-2xs appearance-none focus:outline-none focus:border-zinc-900 dark:focus:border-rose-500 focus:ring-1 focus:ring-zinc-900 dark:focus:ring-rose-500 transition-all cursor-pointer pr-10"
+                      className="w-full px-3.5 py-2.5 bg-zinc-50/80 dark:bg-zinc-900/70 hover:bg-zinc-50 dark:hover:bg-zinc-900 focus:bg-white dark:focus:bg-zinc-800 text-zinc-900 dark:text-white border border-zinc-300 dark:border-zinc-800 rounded-lg text-base sm:text-sm shadow-2xs appearance-none focus:outline-none focus:border-zinc-900 dark:focus:border-rose-500 focus:ring-1 focus:ring-zinc-900 dark:focus:ring-rose-500 transition-all cursor-pointer pr-10"
                     >
-                      <option value="Australia" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">Australia</option>
-                      <option value="Brazil" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">Brazil</option>
-                      <option value="Canada" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">Canada</option>
-                      <option value="China" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">China</option>
-                      <option value="France" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">France</option>
-                      <option value="Germany" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">Germany</option>
-                      <option value="India" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">India</option>
-                      <option value="Italy" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">Italy</option>
-                      <option value="Japan" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">Japan</option>
-                      <option value="Mexico" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">Mexico</option>
-                      <option value="Netherlands" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">Netherlands</option>
-                      <option value="Russia" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">Russia</option>
-                      <option value="South Korea" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">South Korea</option>
-                      <option value="Spain" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">Spain</option>
-                      <option value="Sweden" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">Sweden</option>
-                      <option value="Switzerland" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">Switzerland</option>
-                      <option value="United Kingdom" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">United Kingdom</option>
-                      <option value="United States" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">United States</option>
-                      <option value="Argentina" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">Argentina</option>
-                      <option value="Belgium" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">Belgium</option>
-                      <option value="Egypt" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">Egypt</option>
-                      <option value="Greece" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">Greece</option>
-                      <option value="Indonesia" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">Indonesia</option>
-                      <option value="Saudi Arabia" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">Saudi Arabia</option>
-                      <option value="Turkey" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">Turkey</option>
-                      <option value="Other" className="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">Other</option>
+                      <option value="Australia" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">Australia</option>
+                      <option value="Brazil" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">Brazil</option>
+                      <option value="Canada" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">Canada</option>
+                      <option value="China" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">China</option>
+                      <option value="France" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">France</option>
+                      <option value="Germany" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">Germany</option>
+                      <option value="India" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">India</option>
+                      <option value="Italy" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">Italy</option>
+                      <option value="Japan" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">Japan</option>
+                      <option value="Mexico" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">Mexico</option>
+                      <option value="Netherlands" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">Netherlands</option>
+                      <option value="Russia" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">Russia</option>
+                      <option value="South Korea" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">South Korea</option>
+                      <option value="Spain" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">Spain</option>
+                      <option value="Sweden" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">Sweden</option>
+                      <option value="Switzerland" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">Switzerland</option>
+                      <option value="United Kingdom" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">United Kingdom</option>
+                      <option value="United States" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">United States</option>
+                      <option value="Argentina" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">Argentina</option>
+                      <option value="Belgium" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">Belgium</option>
+                      <option value="Egypt" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">Egypt</option>
+                      <option value="Greece" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">Greece</option>
+                      <option value="Indonesia" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">Indonesia</option>
+                      <option value="Saudi Arabia" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">Saudi Arabia</option>
+                      <option value="Turkey" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">Turkey</option>
+                      <option value="Other" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white">Other</option>
                     </select>
                     <ChevronDown className="w-4 h-4 text-zinc-500 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
                   </div>
@@ -327,7 +327,7 @@ export function Contact() {
                   onChange={handleChange}
                   placeholder="Leave us a message..."
                   rows={4}
-                  className="w-full px-3.5 py-2.5 bg-zinc-50/80 dark:bg-zinc-900/70 hover:bg-zinc-50 dark:hover:bg-zinc-900 focus:bg-white dark:focus:bg-zinc-900 text-zinc-900 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-500 border border-zinc-300 dark:border-zinc-800 rounded-lg text-base sm:text-sm shadow-2xs focus:outline-none focus:border-zinc-900 dark:focus:border-rose-500 focus:ring-1 focus:ring-zinc-900 dark:focus:ring-rose-500 transition-all resize-none"
+                  className="w-full px-3.5 py-2.5 bg-zinc-50/80 dark:bg-zinc-900/70 hover:bg-zinc-50 dark:hover:bg-zinc-900 focus:bg-white dark:focus:bg-zinc-800 text-zinc-900 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-500 border border-zinc-300 dark:border-zinc-800 rounded-lg text-base sm:text-sm shadow-2xs focus:outline-none focus:border-zinc-900 dark:focus:border-rose-500 focus:ring-1 focus:ring-zinc-900 dark:focus:ring-rose-500 transition-all resize-none"
                 />
               </div>
 
@@ -336,7 +336,7 @@ export function Contact() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full sm:w-3/5 py-3 px-8 bg-zinc-900 dark:bg-zinc-100 hover:bg-zinc-800 dark:hover:bg-white active:scale-[0.99] text-white dark:text-black font-semibold rounded-lg shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-zinc-900 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-black transition-all duration-200 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                  className="w-full sm:w-3/5 py-3 px-8 bg-zinc-900 dark:bg-zinc-100 hover:bg-zinc-800 dark:hover:bg-zinc-200 active:scale-[0.99] text-white dark:text-black font-semibold rounded-lg shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-zinc-900 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-zinc-800 transition-all duration-200 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                 >
                   {isSubmitting ? (
                     <>

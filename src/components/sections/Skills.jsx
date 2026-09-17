@@ -113,7 +113,7 @@ export const Skills = () => {
                     return (
                       <div
                         key={skillIndex}
-                        className="flex items-center gap-3 px-4 py-2.5 sm:px-4.5 sm:py-3 rounded-xl bg-white dark:bg-[#0c0c0e] border border-zinc-200/90 dark:border-zinc-800/90 hover:border-zinc-400 dark:hover:border-zinc-600 cursor-pointer shrink-0 group/card"
+                        className="flex items-center gap-3 px-4 py-2.5 sm:px-4.5 sm:py-3 rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200/90 dark:border-zinc-700/80 hover:border-zinc-400 dark:hover:border-zinc-500 cursor-pointer shrink-0 group/card"
                       >
                         {/* Tech Icon Container */}
                         <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/70 dark:border-zinc-800 flex items-center justify-center text-zinc-700 dark:text-zinc-300 group-hover/card:text-rose-600 dark:group-hover/card:text-rose-400">
@@ -155,7 +155,7 @@ export const Skills = () => {
 
       {/* Subtle bottom info bar */}
       <div className="max-w-6xl mx-auto px-6 mt-10 sm:mt-12 flex justify-center">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-zinc-300/80 dark:border-zinc-800 bg-white/80 dark:bg-zinc-950/80 shadow-2xs">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-zinc-300/80 dark:border-zinc-700 bg-white/80 dark:bg-zinc-800/90 shadow-2xs">
           <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
           <span className="text-xs font-mono font-medium text-zinc-600 dark:text-zinc-400">
             Hover over any technology to pause & explore

@@ -178,7 +178,7 @@ export const About = () => {
               {metrics.map((item, idx) => (
                 <div
                   key={idx}
-                  className="p-3.5 sm:p-4 rounded-2xl bg-white/70 dark:bg-zinc-950/80 backdrop-blur-sm border border-zinc-200/90 dark:border-zinc-800/90 shadow-sm transition-transform duration-200 hover:-translate-y-0.5 flex flex-col items-center sm:items-start text-center sm:text-left justify-between"
+                  className="p-3.5 sm:p-4 rounded-2xl bg-white/70 dark:bg-zinc-800 backdrop-blur-sm border border-zinc-200/90 dark:border-zinc-700/80 shadow-sm transition-transform duration-200 hover:-translate-y-0.5 flex flex-col items-center sm:items-start text-center sm:text-left justify-between"
                 >
                   <div className="text-lg sm:text-xl lg:text-2xl font-extrabold text-zinc-900 dark:text-white tracking-tight whitespace-nowrap">
                     {item.value}
@@ -200,7 +200,7 @@ export const About = () => {
                 return (
                   <div
                     key={idx}
-                    className="p-3.5 sm:p-4 rounded-2xl bg-white/60 dark:bg-zinc-950/70 border border-zinc-200/90 dark:border-zinc-800/90 flex items-start gap-3.5 hover:bg-white dark:hover:bg-zinc-900/90 transition-all duration-200 shadow-xs"
+                    className="p-3.5 sm:p-4 rounded-2xl bg-white/60 dark:bg-zinc-800 border border-zinc-200/90 dark:border-zinc-700/80 flex items-start gap-3.5 hover:bg-white dark:hover:bg-zinc-700 transition-all duration-200 shadow-xs"
                   >
                     <div className="w-9 h-9 rounded-xl bg-zinc-900 dark:bg-zinc-800 text-white flex items-center justify-center shrink-0 mt-0.5 shadow-xs">
                       <Icon className="w-4 h-4 text-rose-400" />
@@ -235,7 +235,7 @@ export const About = () => {
 
               <button
                 onClick={() => scrollTo('#projects')}
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white hover:bg-zinc-100 dark:bg-zinc-900 dark:hover:bg-zinc-800 text-zinc-900 dark:text-white text-sm font-semibold tracking-wide border border-zinc-200/90 dark:border-zinc-800 shadow-sm transition-all duration-300 active:scale-[0.98] cursor-pointer group"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white hover:bg-zinc-100 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-900 dark:text-white text-sm font-semibold tracking-wide border border-zinc-200/90 dark:border-zinc-700 shadow-sm transition-all duration-300 active:scale-[0.98] cursor-pointer group"
               >
                 <span>View My Work</span>
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
